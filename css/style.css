@@ -1,6 +1,6 @@
 body {
-	font-family: 'Montserrat', Arial;
-	background: #505050;
+	font-family: 'Source Sans Pro', Arial;
+	background: #807D77;
 	color:#00001f;
 	width:500px;
     min-height: 300px;
@@ -14,3 +14,17 @@ body {
 .pull-right {float: right;}
 .posrel {position: relative;}
 .posabs {position: absolute;}
+
+.container { margin: 0 auto;}
+.row { margin-left:10px;margin-right:10px;}
+.title {
+	color:#fff;
+	font-size: 24px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    text-align: center;
+}
+.actions {margin-top: 10px;}
+textarea {width: 100%;min-height: 200px;}
+label {color:#eee;}
+button {padding: 5px 8px;margin-left: 10px;}
