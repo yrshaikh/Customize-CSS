@@ -1,18 +1,12 @@
-$(document)
-    .ready(function() {
-        //applyCss();
-    });
-
+var tabId, tabUrl;
 chrome.tabs.getSelected(null, function (tab) {
-    var tabId = tab.id;
-    var tabUrl = tab.url;
+    tabId = tab.id;
+    tabUrl = tab.url;
     console.log(tabId, tabUrl);
-    applyCss(tabId);
 });
 
-function applyCss(tabId) {
-    chrome.tabs.insertCSS(tabId, { code : "body{background:green}" }, function(a, b, c) {
-        console.log("css applied", a, b, c);
+$(document)
+    .ready(function () {
+        var cssModifier = new CssModifier(tabId, tabUrl);
+        cssModifier.update("body{background:pink !important;}");
     });
-}
-
