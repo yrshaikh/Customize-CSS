@@ -1,10 +1,9 @@
+body, .button {font-family: 'Source Sans Pro', Arial;}
 body {
-	font-family: 'Source Sans Pro', Arial;
-	background: #807D77;
+	background: #fffff8;
 	color:#00001f;
-	width:500px;
-    min-height: 300px;
-	height: auto;
+    width: 700px;
+    height: 520px;
 	padding: 0px;
     margin: 0px;
     overflow-x: hidden;
@@ -18,13 +17,22 @@ body {
 .container { margin: 0 auto;}
 .row { margin-left:10px;margin-right:10px;}
 .title {
-	color:#fff;
+	color:#000;
 	font-size: 24px;
     margin-bottom: 15px;
     margin-top: 10px;
     text-align: center;
 }
-.actions {margin-top: 10px;}
-textarea {width: 100%;min-height: 200px;}
+.clear {clear: both;}
+input[type=checkbox] {height: 10px;}
+.title .red {color:#e74c3c;margin-right: 5px;}
+.desc {margin-top: -15px;text-align: center;margin-bottom: 8px;}
+.link {color: #37353a;}
+.link:hover {color: #e74c3c;}
+.options {height: 20px;font-size: 12px;}
+.underline:hover {text-decoration: underline;cursor: pointer;}
+.actions {}
+textarea {width: 100%;height: 400px;}
 label {color:#eee;}
-button {padding: 5px 8px;margin-left: 10px;}
+.button {width: 100%;height: 40px;background-color: #e74c3c;color: white;text-transform: uppercase;border: none;font-size: 18px;}
+.button:hover {cursor:pointer;background-color: #d73c2c;text-decoration: underline;}

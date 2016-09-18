@@ -1,27 +1,36 @@
   <html ng-app="timezoneApp">
   <head>
-		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
-		<link rel="stylesheet" href="./css/codemirror.css">
-		<link rel="stylesheet" type="text/css" href="./css/style.css"></link>
+  	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+  	<link rel="stylesheet" href="./css/codemirror.css">
+  	<link rel="stylesheet" href="./css/themes/ambiance.css">
+  	<link rel="stylesheet" type="text/css" href="./css/style.css"></link>        
   </head>
-	<body>
-	<div class="container">
-	    <div class="row title">Customize CSS</div>
-	    <div id="editor" class="row">
-	    </div>
-        <div class="row actions">
-	        <label class="pull-left"><input type="checkbox"/> Live Preview</label>
-	        <button class="pull-right">Save & Apply</button>
-	        <button class="pull-right">Tidy Up</button>
-	    </div>
-	</div>
-        <script type="text/javascript" src="js/lib/jquery-3.1.0.slim.min.js"></script>
-        <script src="js/lib/codemirror/codemirror.js"></script>
-        <script src="js/lib/codemirror/css.js"></script>
-		
-        <script type="text/javascript" src="js/app/css-modifier.js"></script>
-        <script type="text/javascript" src="js/app/codemirror-util.js"></script>
-		<script type="text/javascript" src="js/app/app.js"></script>
-	</body>
-</html>
+  <body>
+  	<div class="container">
+  		<div class="row title"><span class="red">Customize</span><span>CSS</span></div>
+  		<div class="row desc">Description line1, bleh bleh bleh.</div>
+  		<div class="row options">
+  			<span class="pull-left">
+  				<label class="link"><input id="livepreivew" type="checkbox" />Live Preview</label>
+  			</span>
+  			<span class="pull-right">
+  				<label class="link underline">Tidy Up</label>
+  			</span>
+  		</div>
+  		<div class="clear">
+  			<textarea id="editor"></textarea>
+  		</div>
+  		<div class="actions">
+  			<button class="button">Save & Apply</button>
+  		</div>
+  	</div>
+  	<script type="text/javascript" src="js/lib/jquery-3.1.0.slim.min.js"></script>
+  	<script type="text/javascript" src="js/lib/codemirror/codemirror.js"></script>
+  	<script type="text/javascript" src="js/lib/codemirror/css.js"></script>
+
+  	<script type="text/javascript" src="js/app/css-modifier.js"></script>
+  	<script type="text/javascript" src="js/app/codemirror-util.js"></script>
+  	<script type="text/javascript" src="js/app/app.js"></script>
+  </body>
+  </html>
 
