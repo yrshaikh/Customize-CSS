@@ -14,7 +14,8 @@ CodeMirrorUtil.prototype.load = function (identifier) {
             mode:  "css",
 			matchBrackets: true,
 			lineNumbers: true,
-			height:300
-        });
+			extraKeys: {"Ctrl-Space": "autocomplete"},
+			value: document.documentElement.innerHTML
+    });
     rock.editor.focus();
 };

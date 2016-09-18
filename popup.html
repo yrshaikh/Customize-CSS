@@ -2,16 +2,17 @@
   <head>
   	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
   	<link rel="stylesheet" href="./css/codemirror.css">
+  	<link rel="stylesheet" href="./css/show-hint.css">
   	<link rel="stylesheet" href="./css/themes/ambiance.css">
   	<link rel="stylesheet" type="text/css" href="./css/style.css"></link>        
   </head>
   <body>
   	<div class="container">
   		<div class="row title"><span class="red">Customize</span><span>CSS</span></div>
-  		<div class="row desc">Description line1, bleh bleh bleh.</div>
+  		<div class="row desc">Change your favourite websites design instantly by using this extension.</div>
   		<div class="row options">
   			<span class="pull-left">
-  				<label class="link"><input id="livepreivew" type="checkbox" />Live Preview</label>
+  				<label class="link underline"><input id="livepreivew" type="checkbox" />Live Preview</label>
   			</span>
   			<span class="pull-right">
   				<label class="link underline">Tidy Up</label>
@@ -23,11 +24,21 @@
   		<div class="actions">
   			<button class="button">Save & Apply</button>
   		</div>
+  		<div id="footer">
+  			<div class="pull-left">Press "ctrl+space" to activate auto-complete.</div>
+  			<div class="pull-right">
+  				<a href="">Report a Bug</a>
+	  			<a href="">About</a>
+	  			<a href="">Homepage</a>
+  			</div>
+  		</div>
   	</div>
+
   	<script type="text/javascript" src="js/lib/jquery-3.1.0.slim.min.js"></script>
   	<script type="text/javascript" src="js/lib/codemirror/codemirror.js"></script>
   	<script type="text/javascript" src="js/lib/codemirror/css.js"></script>
-
+	<script src="js/lib/codemirror/show-hint.js"></script>
+	
   	<script type="text/javascript" src="js/app/css-modifier.js"></script>
   	<script type="text/javascript" src="js/app/codemirror-util.js"></script>
   	<script type="text/javascript" src="js/app/app.js"></script>
