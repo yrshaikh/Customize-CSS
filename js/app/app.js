@@ -34,5 +34,11 @@ $(document)
 
     });
 
+ $(document).keydown(function(e) {
 
-
+     if($('#livepreivew').is(":checked")) {
+         console.log('yes');
+         var cssModifier = new CssModifier(tabId, tabUrl);
+         cssModifier.update(rock.editor.getValue());
+     }
+ });
