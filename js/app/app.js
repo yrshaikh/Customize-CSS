@@ -32,13 +32,31 @@ $(document)
             });            
         });
 
+        $("#resetcss").click(function(){
+            var cssModifier = new CssModifier(tabId, tabUrl);
+            var value = "";
+            rock.editor.setValue(value);
+            var obj = {};
+            obj[origin] = value;
+            cssModifier.update(value);
+            chrome.storage.sync.set({"css" : obj}, function() {
+                chrome.tabs.reload();
+            });
+        });
+
     });
 
  $(document).keydown(function(e) {
-
+     var origin = new URL(tabUrl).origin;
      if($('#livepreivew').is(":checked")) {
          console.log('yes');
          var cssModifier = new CssModifier(tabId, tabUrl);
-         cssModifier.update(rock.editor.getValue());
+         var value = rock.editor.getValue();
+         var obj = {};
+         obj[origin] = value;
+         cssModifier.update(value);
+         chrome.storage.sync.set({"css" : obj}, function() {
+             //
+         });
      }
  });

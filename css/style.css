@@ -37,3 +37,4 @@ label {color:#eee;}
 .button:hover {cursor:pointer;background-color: #d73c2c;text-decoration: underline;}
 #footer {margin-top: 15px;margin-left: 10px;}
 #footer a {float: right;margin-right: 10px;}
+#resetcss {margin-right: 8px;}
